@@ -184,3 +184,18 @@ body {
   .content { padding: 0 18px; }
   .dashboard, .prose, .page-head { padding-top: 56px; }
 }
+
+/* 基本/演習 区分バッジ */
+.tier-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.18em 0.5em;
+  border-radius: 999px;
+  margin-right: 0.4em;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.tier-basic { background: #dbeafe; color: #1e40af; }
+.tier-practice { background: #fef3c7; color: #92400e; }

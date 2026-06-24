@@ -26,6 +26,16 @@ function parseFrontmatter(raw) {
   return { data, body: m[2] }
 }
 
+// 演習（個別事例・具体サイクル・応用）の id 集合。ここに無いものは「基本」（支配関係・各過程の式）。
+// 区分の根拠: knowledge/notes/院試/導出リスト_熱力学.md の「基本/演習 区分」（2026-06-24）。
+export const PRACTICE_IDS = new Set([
+  'otto', 'diesel', 'brayton',
+  'wet-steam', 'rankine', 'combined-cycle',
+  'reverse-carnot', 'vapor-compression',
+  'free-expansion', 'phase-change-entropy',
+])
+export const tierOf = (id) => (PRACTICE_IDS.has(id) ? '演習' : '基本')
+
 const modules = import.meta.glob('./content/**/*.md', {
   query: '?raw',
   import: 'default',
@@ -47,6 +57,7 @@ for (const [path, raw] of Object.entries(modules)) {
     formula: data.formula || '',
     issue: data.issue || '',
     year: data.year || '',
+    tier: tierOf(id),
     prereq: Array.isArray(data.prereq) ? data.prereq : data.prereq ? [data.prereq] : [],
     body,
   })

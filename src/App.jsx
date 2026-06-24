@@ -148,6 +148,7 @@ function Dashboard() {
                 <li key={p.id}>
                   <a className="item-link" href={'#/' + p.id}>
                     <StateBadge id={p.id} compact />
+                    <span className={`tier-badge tier-${p.tier === '演習' ? 'practice' : 'basic'}`}>{p.tier}</span>
                     <span className="item-title">{p.title}</span>
                     {p.formula && <code className="item-formula">{p.formula}</code>}
                     {p.year && <span className="item-year">{p.year}</span>}
@@ -210,6 +211,7 @@ function DerivationPage({ id }) {
           <StateBadge id={id} />
         </div>
         <div className="page-meta">
+          <span className={`tier-badge tier-${page.tier === '演習' ? 'practice' : 'basic'}`}>{page.tier}</span>
           {page.formula && <code className="page-formula">{page.formula}</code>}
           {page.issue && (
             <a className="page-issue" href={`https://github.com/zumizumi0625/SELF_MANAGEMENT/issues/${page.issue}`} target="_blank" rel="noreferrer">#{page.issue}</a>
