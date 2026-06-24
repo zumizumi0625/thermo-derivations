@@ -1,0 +1,25 @@
+{
+  "name": "thermo-derivations",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "熱力学 導出トレ — 東京科学大 機械系 院試対策。各公式を出発点から丁寧に・図つきで導出する個別サブページ＋進捗トラッキング付きのインタラクティブ資料",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0",
+    "remark-math": "^6.0.0",
+    "rehype-katex": "^7.0.1",
+    "katex": "^0.16.11"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}
