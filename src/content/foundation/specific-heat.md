@@ -30,9 +30,11 @@ $$
 c_v \equiv \left(\frac{\delta q}{dT}\right)_v = \left(\frac{\partial u}{\partial T}\right)_v
 $$
 
+（この定義はまだ理想気体に限らず、どんな気体でも成り立つ。）
+
 ## ステップ2: 定圧（$p=$ const）→ cp
 
-エンタルピーの微分 $dh = du + p\,dv + v\,dp$ を使う。第一法則 $\delta q = du+p\,dv$ と並べると $\delta q = dh - v\,dp$。圧力一定で $dp=0$ なので $\delta q = dh$。よって
+定圧では膨張仕事が残るので $\delta q=du$ とはいかない。そこでエンタルピー $h=u+pv$ を導入し、その微分 $dh = du + p\,dv + v\,dp$ を使う。第一法則 $\delta q = du+p\,dv$ と並べると $\delta q = dh - v\,dp$ と書き直せる（仕事を $h$ の中に畳み込んだ形）。圧力一定で $dp=0$ だから $\delta q = dh$。よって
 
 $$
 c_p \equiv \left(\frac{\delta q}{dT}\right)_p = \left(\frac{\partial h}{\partial T}\right)_p
@@ -40,7 +42,7 @@ $$
 
 ## ステップ3: 理想気体では $u,h$ は $T$ だけの関数
 
-ジュールの実験（理想気体の自由膨張で温度不変）から $u=u(T)$。すると $h=u+pv=u(T)+RT$ も $T$ だけの関数。したがって偏微分は常微分になり、
+ステップ1・2の $c_v,c_p$ の定義はどんな気体でも成り立つ。ここから先は理想気体に話を絞り、実験事実を1つ借りる：ジュールの[自由膨張](#/free-expansion)（理想気体を真空へ膨張させると体積は増えるのに温度が変わらない）。体積を変えても温度が動かないということは、内部エネルギーが体積に依存せず温度だけで決まるということで、すなわち $u=u(T)$ だと分かる。すると $h=u+pv=u(T)+RT$ も $T$ だけの関数になる。$u,h$ が $T$ 一変数の関数になったので、もう体積や圧力を固定して測る必要がなく、偏微分は常微分に置き換わって、
 
 $$
 c_v = \frac{du}{dT},\qquad c_p = \frac{dh}{dT}
@@ -52,7 +54,7 @@ $$
 \boxed{\,c_v = \left(\frac{\partial u}{\partial T}\right)_v,\qquad c_p = \left(\frac{\partial h}{\partial T}\right)_p\,}
 $$
 
-理想気体なら $du = c_v\,dT$、$dh = c_p\,dT$（過程によらず常に成立）。
+理想気体なら $du = c_v\,dT$、$dh = c_p\,dT$ が**どんな過程でも**（定積・定圧に限らず断熱でも等温でも）成り立つ。$u,h$ が $T$ だけの関数なので、温度が同じだけ変われば過程によらず $u,h$ の変化も同じになるからである。
 
 ## つながり
 
