@@ -42,7 +42,7 @@ $$
 
 ## ステップ3: 等圧変化の熱
 
-エンタルピー表示 $\delta q=dh-v\,dp$ を使う。等圧なので $dp=0$、よって $\delta q=dh$。理想気体で $dh=c_p\,dT$ だから、
+ここでは $dp=0$ の項が消えるエンタルピー表示 $\delta q=dh-v\,dp$ を使うと早い。等圧なので $dp=0$、よって $\delta q=dh$。理想気体で $dh=c_p\,dT$ だから、
 
 $$
 q = \Delta h = \int c_p\,dT = c_p\,\Delta T

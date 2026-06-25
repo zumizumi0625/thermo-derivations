@@ -34,7 +34,7 @@ $$
 
 ## ステップ2: 第一法則から q = w
 
-$\Delta U=0$ を第一法則 $\delta q = du + p\,dv$ に入れると $du=0$ なので、
+等温では各微小区間でも $dT=0$ だから $du=c_v\,dT=0$。これを第一法則 $\delta q = du + p\,dv$ に入れると、
 
 $$
 \delta q = p\,dv \;\Longrightarrow\; q = w = \int_1^2 p\,dv
