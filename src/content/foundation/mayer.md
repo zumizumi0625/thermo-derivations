@@ -21,7 +21,7 @@ prereq: [ideal-gas, specific-heat]
 
 ## 設定
 
-理想気体 $1\,\mathrm{kg}$。$c_v=\dfrac{du}{dT}$、$c_p=\dfrac{dh}{dT}$（[比熱の定義](#/specific-heat)より）、状態方程式 $pv=RT$。
+理想気体 $1\,\mathrm{kg}$。$c_v=\dfrac{du}{dT}$、$c_p=\dfrac{dh}{dT}$（[比熱の定義](#/specific-heat)より）、状態方程式 $pv=RT$。$c_v$ は定積（$dv=0$）、$c_p$ は定圧（$dp=0$）の[第一法則](#/first-law-closed) $\delta q=du+p\,dv$ から出た量なので、両者の差にも第一法則の構造がそのまま残る。
 
 ## ステップ1: エンタルピーを展開
 
@@ -54,5 +54,10 @@ $$
 $$
 
 比熱比 $\kappa=c_p/c_v$ と連立すると $c_v=\dfrac{R}{\kappa-1}$、$c_p=\dfrac{\kappa R}{\kappa-1}$ と即座に出せて便利。
+
+## つながり
+
+- **🔥 第一法則からの一貫した流れ**: $c_p-c_v=R$ は「定圧加熱では膨張仕事 $p\,dv=R\,dT$ が余分に要る」という第一法則の帰結そのもの。定積 $\delta q=c_v\,dT$ と定圧 $\delta q=c_p\,dT$ を $\delta q=du+p\,dv$ から立て、その差をとると差 $R$ が落ちてくる——加熱の仕方を変えるだけ、という第一法則の使い方の好例。ここで得た $c_v=\tfrac{R}{\kappa-1}$ は[断熱変化](#/adiabatic-polytropic)やサイクルの効率計算でそのまま使う。
+- **🧱 材料の比熱・エネルギー等分配（力学）**: 差 $R$ が「気体だから膨張仕事の分だけ $c_p>c_v$」なのに対し、ほとんど膨張しない固体（材料）では $c_p\approx c_v$ になる——この対比が $c_p-c_v$ の物理的意味を際立たせる。$c_v$ 自体の値は分子の自由度 $f$ から[等分配則](#/kappa-equipartition)で $c_v=\tfrac{f}{2}R$ と決まる。
 
 > **ポイント**: 差 $R$ の正体は「定圧で $1\,\mathrm{K}$ 上げたとき気体がする仕事 $p\,dv=R\,dT$」。理想気体専用の関係（実在気体では成り立たない）。
