@@ -78,7 +78,7 @@ $$
 \left(\frac{\partial T}{\partial s}\right)_v=\frac{T}{c_v}>\frac{T}{c_p}=\left(\frac{\partial T}{\partial s}\right)_p
 $$
 
-すなわち**定積線の方が定圧線より急**に立ち上がる。物理的には「定圧では膨張仕事に熱が逃げる分、同じ $\Delta s$ あたりの温度上昇が緩い」ということ。
+すなわち**定積線の方が定圧線より急**に立ち上がる。物理的には「定圧では受け取った熱の一部が膨張仕事に回る分、同じ $\Delta s$ あたりの温度上昇が緩い」ということ。
 
 @@FIG:ts-slope-compare@@
 

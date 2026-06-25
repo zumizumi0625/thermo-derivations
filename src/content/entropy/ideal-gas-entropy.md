@@ -27,7 +27,7 @@ prereq: [clausius]
 
 ## ステップ1: 第一法則を $dS$ に入れる
 
-可逆過程の熱を第一法則で書き、$dS=\delta q_{rev}/T$ に代入する：
+可逆過程の熱を第一法則で書き、$dS=\delta q_{rev}/T$ に代入する（$dS$ は状態量の微分なので、こうして可逆経路で組み立てた式は不可逆過程の $\Delta s$ にもそのまま使える）：
 
 $$
 dS=\frac{\delta q_{rev}}{T}=\frac{du+p\,dv}{T}
@@ -52,7 +52,7 @@ $$
 
 ## ステップ4: $c_p$・$p$ 版に書き換える
 
-エンタルピー基準 $\delta q=dh-v\,dp$、$dh=c_p\,dT$、$\dfrac{v}{T}=\dfrac{R}{p}$ を使うと、同じ手順で
+与えられる量が $(T,p)$ のときに使えるよう、エンタルピー基準 $\delta q=dh-v\,dp$、$dh=c_p\,dT$、$\dfrac{v}{T}=\dfrac{R}{p}$ を使うと、同じ手順で
 
 $$
 ds=c_p\frac{dT}{T}-R\frac{dp}{p}
