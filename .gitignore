@@ -3,3 +3,6 @@ dist
 *.local
 .DS_Store
 vite.config.js.timestamp-*
+
+# 参照用講義テキスト(金川先生・著作物)はローカル保持。公開リポに含めない
+.reference/
