@@ -74,7 +74,7 @@ $$
 T_3 = T_2\frac{v_3}{v_2} = T_2\,\sigma = T_1\,\varepsilon^{\kappa-1}\sigma
 $$
 
-**$3\to4$ 断熱膨張**：$Tv^{\kappa-1}=\text{const}$。膨張の体積比は $v_4/v_3=v_1/v_3$。ここで $v_1=\varepsilon v_2$、$v_3=\sigma v_2$ なので $v_4/v_3=\varepsilon/\sigma$。したがって
+**$3\to4$ 断熱膨張**：$Tv^{\kappa-1}=\text{const}$。膨張の体積比は、$4\to1$ が等積放熱で状態1へ戻り $v_4=v_1$ なので $v_4/v_3=v_1/v_3$。ここで $v_1=\varepsilon v_2$、$v_3=\sigma v_2$ だから $v_4/v_3=\varepsilon/\sigma$。したがって
 
 $$
 T_4 = T_3\Bigl(\frac{v_3}{v_4}\Bigr)^{\kappa-1} = T_3\Bigl(\frac{\sigma}{\varepsilon}\Bigr)^{\kappa-1} = T_1\,\varepsilon^{\kappa-1}\sigma\cdot\frac{\sigma^{\kappa-1}}{\varepsilon^{\kappa-1}} = T_1\,\sigma^{\kappa}
@@ -111,4 +111,4 @@ $$
 - **🏗️ 往復機関（力学・燃焼）**: ディーゼルは圧縮着火レシプロエンジンのモデル。空気だけを高圧縮（実機で約 30 気圧）して着火温度まで上げてから燃料を噴射するので火花プラグが要らない。等圧受熱 $2\to3$ は「ピストンが動きながら燃やす」行程そのもので、締切比 $\sigma=v_3/v_2$ が噴射を打ち切るタイミング（燃料量）に対応する。
 - **🌀 作動流体の断熱関係**: 各点の温度を結んだ $Tv^{\kappa-1}=\text{const}$ は[断熱変化](#/adiabatic-polytropic)の関係で、[オットー](#/otto)と共通の道具。違いは加熱が等圧（$c_p$）か等積（$c_v$）かだけで、$\sigma\to1$ の極限で補正項が $1$ に落ちオットーに連続的に一致する。
 
-> **ポイント**: $\sigma\to1$（締切比1＝加熱量ゼロの極限）では補正項が $\dfrac{\sigma^\kappa-1}{\kappa(\sigma-1)}\to1$（ロピタル）となり、$\eta\to1-1/\varepsilon^{\kappa-1}$＝**オットーに一致**する。等圧加熱だから $q_H$ は $c_p$、等積放熱だから $q_L$ は $c_v$ → 比に $\kappa$ が残る、を取り違えないこと。$T_4=T_1\sigma^\kappa$ がきれいに出るのが見せ場。
+> **ポイント**: $\sigma\to1$（締切比1＝加熱量ゼロの極限）では補正項が $\dfrac{\sigma^\kappa-1}{\kappa(\sigma-1)}\to1$（$\sigma\to1$ で $0/0$ 型なのでロピタルの定理）となり、$\eta\to1-1/\varepsilon^{\kappa-1}$＝**オットーに一致**する。等圧加熱だから $q_H$ は $c_p$、等積放熱だから $q_L$ は $c_v$ → 比に $\kappa$ が残る、を取り違えないこと。$T_4=T_1\sigma^\kappa$ がきれいに出るのが見せ場。
